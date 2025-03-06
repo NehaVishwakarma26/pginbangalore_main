@@ -45,8 +45,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap');
 
 :root {
-    --bgcolor: #FF6F61;
-    --main-color : #FF6F61 ;
+    --bgcolor: #00BFFF;
+    --main-color : #00BFFF ;
 }
 body,html {
     font-family: "Inter" ;
