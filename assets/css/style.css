@@ -45,8 +45,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap');
 
 :root {
-    --bgcolor: #00BFFF;
-    --main-color : #00BFFF ;
+    --bgcolor: #8E44AD;
+    --main-color : #8E44AD ;
 }
 body,html {
     font-family: "Inter" ;
@@ -384,6 +384,7 @@ header {
 
 .btn > span > span {
     overflow: hidden; 
+    color: white;
 }
 
 .btn:hover > span > span {
@@ -2106,3 +2107,22 @@ footer ul.shaps-img li:nth-child(3) {
 .team:after,.team span,.team a,.team h4,ul.chek li img ,.widget-title ul li a,footer a,.presenting i:after{
     transition: .4s all;
 } 
+
+.pricing p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .pricing a {
+    text-decoration: none;
+    color: #000;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+
+
+
+  .pricing:hover p {
+    color: white; /* Changes text to white on hover */
+  }
