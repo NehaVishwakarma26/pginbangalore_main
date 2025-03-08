@@ -443,6 +443,18 @@
   .subscribe-text {
     margin-top: 0px;
   }
+
+  .pricing-card {
+    max-width: 320px; /* Even smaller for mobile */
+    margin: 10px 15px;
+}
+
+.pricing-container {
+  flex-direction: column; /* Stack cards on smaller screens */
+  align-items: center;
+  margin: auto;
+}
+
   .accordion {
     width: 100%;
     padding: 12px 20px; 
