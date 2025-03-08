@@ -487,6 +487,11 @@
     padding-bottom: 0;
     margin-bottom: 0px;
   }
+
+  .option {
+    width: 100%;
+  }
+
 }
 @media(max-width: 576px){
   ul.shaps-img {

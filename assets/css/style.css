@@ -1525,9 +1525,48 @@ ul.icon-share {
 } 
 .pricing {
     padding: 10px;
-    background-color: #f4f4f7;
-    border-radius: 20px;
-} 
+    background-color: #f5f5fa;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.pricing:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+
+/* Style for each PG listing */
+.pricing-card {
+    position: relative;
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the image stays within rounded borders */
+}
+
+.pricing-card img {
+    width: 100%;
+    height: 350px; /* Set a fixed height */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px;
+}
+
+.pricing-text {
+    position: absolute;
+    bottom: 15px; /* Position at the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.); /* Semi-transparent dark background */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.7em;
+    width: 92%;
+    border-radius: 10px;
+}
+
 
 .pricing-plans-text p {
     padding-top: 34px;
@@ -2107,13 +2146,15 @@ footer ul.shaps-img li:nth-child(3) {
 .team:after,.team span,.team a,.team h4,ul.chek li img ,.widget-title ul li a,footer a,.presenting i:after{
     transition: .4s all;
 } 
+.pricing {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Pushes the <p> to the bottom */
+    align-items: center;
+    padding: 0 !important; /* Ensure no extra padding */
+}
 
-.pricing p {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    text-align: center;
-  }
+
 
   .pricing a {
     text-decoration: none;
@@ -2126,3 +2167,95 @@ footer ul.shaps-img li:nth-child(3) {
   .pricing:hover p {
     color: white; /* Changes text to white on hover */
   }
+
+  .slick-prev:before,
+.slick-next:before {
+    color: black !important;
+}
+.lifestyle-section {
+    display: flex;
+    align-items: center; /* Vertically aligns content */
+    justify-content: space-between; /* Pushes title left & images right */
+    gap: 50px; /* Adds spacing between text & images */
+    padding: 50px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Space between heading & images */
+    width: 100%;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: left;
+    width: 30%; /* Limits width of heading */
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    width: 70%;
+}
+
+.option {
+    text-align: center;
+    flex: 1 1 calc(50% - 10px); /* Two in a row */
+    max-width: 200px;
+}
+
+.option img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.option p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}/* Mobile Styles */
+@media (max-width: 768px) {
+    .lifestyle-section {
+        flex-direction: column; /* Stack children vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .content-wrapper {
+        flex-direction: column; /* Stack children vertically */
+        gap: 20px; /* Reduce gap for smaller screens */
+        width: 100%; /* Full width */
+    }
+
+    .section-title {
+        width: 100%; /* Full width for title */
+        text-align: left; /* Left-align title */
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .options-container {
+        width: 100%; /* Full width for options container */
+        display: flex; /* Ensure flex layout */
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: flex-start; /* Align items to the left */
+        gap: 10px; /* Reduce gap between items */
+    }
+
+    .option {
+        flex: 1 1 calc(50% - 5px); /* Two in a row with reduced gap */
+        max-width: calc(50% - 5px); /* Ensure two items fit in one row */
+        text-align: left; /* Left-align text */
+        box-sizing: border-box; /* Include padding and border in width calculation */
+    }
+
+    .option img {
+        width: 100%; /* Ensure images take full width of their container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
