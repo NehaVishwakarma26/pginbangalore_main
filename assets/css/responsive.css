@@ -575,8 +575,8 @@
     padding-top: 160px;
     }
    .hero-text p {
-    font-size: 18px;
-     line-height: 28px;
+    font-size: 15px;
+    line-height: 28px;
   }
    .footer-try h2 {
     font-size: 42px;
@@ -601,8 +601,8 @@
     margin-right: 5px;
 }
   .hero-section.for .hero-text h2 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 46px;
+        line-height: 60px;
   }
   .hs-responsive-embed-youtube iframe {
     margin-top: 46px;
